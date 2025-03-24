@@ -9,10 +9,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] private UIMainMenu mainMenu;
     [SerializeField] private UIStatus statusUI;
     [SerializeField] private UIInventory inventoryUI;
+    [SerializeField] private UIPlayerInfo playerInfo;
     
     public UIMainMenu MainMenu => mainMenu;
     public UIStatus StatusUI => statusUI;
     public UIInventory InventoryUI => inventoryUI;
+    public UIPlayerInfo PlayerInfo => playerInfo;
 
     private void Awake()
     {

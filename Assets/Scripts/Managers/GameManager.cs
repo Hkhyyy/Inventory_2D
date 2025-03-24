@@ -30,10 +30,11 @@ public class GameManager : MonoBehaviour
         {
             items.Add(new Item(data));
         }
-
-        Player = new Character("플레이어1", 100, 25, 10, 5, items);
+        
+        Player = new Character("HKK", "Developer",10, 25, 100, 25, 10, 5, items);
         uiManager.StatusUI.UpdateStatus(Player);
         uiManager.InventoryUI.UpdateInventory(Player);
+        uiManager.PlayerInfo.UpdatePlayerInfo(Player);
     }
 
 }
