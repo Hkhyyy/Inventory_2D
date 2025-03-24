@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public Character Player { get; private set; }
 
     [SerializeField] private UIManager uiManager;
-    [SerializeField] private List<Sprite> testInventorySprites; // 인스펙터에서 테스트용 아이템 연결 가능
+    [SerializeField] private string itemDataPath = "ItemData";
 
     private void Awake()
     {
@@ -23,11 +23,17 @@ public class GameManager : MonoBehaviour
 
     public void SetData()
     {
-        // 테스트용 캐릭터 생성
-        Player = new Character("플레이어1", 100, 25, 10, 5, testInventorySprites);
+        ItemData[] itemDatas = Resources.LoadAll<ItemData>(itemDataPath);
+        List<Item> items = new List<Item>();
 
-        // UI에 캐릭터 정보 세팅
+        foreach (ItemData data in itemDatas)
+        {
+            items.Add(new Item(data));
+        }
+
+        Player = new Character("플레이어1", 100, 25, 10, 5, items);
         uiManager.StatusUI.UpdateStatus(Player);
         uiManager.InventoryUI.UpdateInventory(Player);
     }
+
 }

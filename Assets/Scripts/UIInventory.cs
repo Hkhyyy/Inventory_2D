@@ -6,11 +6,9 @@ using System.Collections.Generic;
 public class UIInventory : MonoBehaviour
 {
     [SerializeField] private Transform slotGrid;
-    [SerializeField] private UISlot slotPrefab; // 이렇게!
+    [SerializeField] private UISlot slotPrefab; 
     [SerializeField] private TextMeshProUGUI countText;
     [SerializeField] private Button backButton;
-
-    private List<UISlot> slotList = new List<UISlot>();
 
     private void Awake()
     {
@@ -20,22 +18,16 @@ public class UIInventory : MonoBehaviour
 
     public void UpdateInventory(Character character)
     {
-        // 기존 슬롯 삭제
         foreach (Transform child in slotGrid)
-        {
             Destroy(child.gameObject);
-        }
-        slotList.Clear();
 
-        // 동적 슬롯 생성
-        foreach (Sprite sprite in character.Inventory)
+        foreach (var item in character.Inventory)
         {
             UISlot slot = Instantiate(slotPrefab, slotGrid);
-            slot.SetItem(sprite);
-            slotList.Add(slot);
+            slot.SetItem(item);
         }
 
-        // 수량 텍스트 업데이트
         countText.text = $"{character.Inventory.Count} / 120";
     }
+
 }

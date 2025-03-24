@@ -1140,7 +1140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &623955150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4217,23 +4217,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiManager: {fileID: 429566349}
-  testInventorySprites:
-  - {fileID: 21300000, guid: e7dcaa16f45e9734ab8be253fdfe6aa7, type: 3}
+  testItemIcons:
+  - {fileID: 21300000, guid: a3cb3377d6f9d61469091cae0114b076, type: 3}
+  - {fileID: 21300000, guid: c86950d71a91e6d4f8c2864b7a63d6d8, type: 3}
   - {fileID: 21300000, guid: 52d5e682463a2124f9fd69d5b2245aec, type: 3}
-  - {fileID: 21300000, guid: 80d75a8922e0f764d8a1271e5c3ed299, type: 3}
+  - {fileID: 21300000, guid: d00f7ad5ec4f68144985794a61ff7bc1, type: 3}
+  - {fileID: 21300000, guid: a1a82383d212a4f4ea7bd4e18f10b5ca, type: 3}
+  - {fileID: 21300000, guid: bd4cbcaf773c0ed449e7156cf16ba7e0, type: 3}
+  - {fileID: 21300000, guid: 5e1913027e1c9c743a8b855e99e08ca8, type: 3}
   - {fileID: 21300000, guid: bcd9827d6838b60409bf62af2606dada, type: 3}
-  - {fileID: 21300000, guid: bcd9827d6838b60409bf62af2606dada, type: 3}
-  - {fileID: 21300000, guid: bcd9827d6838b60409bf62af2606dada, type: 3}
-  - {fileID: 21300000, guid: bcd9827d6838b60409bf62af2606dada, type: 3}
-  - {fileID: 21300000, guid: bcd9827d6838b60409bf62af2606dada, type: 3}
-  - {fileID: 21300000, guid: bcd9827d6838b60409bf62af2606dada, type: 3}
-  - {fileID: 21300000, guid: bcd9827d6838b60409bf62af2606dada, type: 3}
-  - {fileID: 21300000, guid: bcd9827d6838b60409bf62af2606dada, type: 3}
-  - {fileID: 21300000, guid: bcd9827d6838b60409bf62af2606dada, type: 3}
-  - {fileID: 21300000, guid: bcd9827d6838b60409bf62af2606dada, type: 3}
-  - {fileID: 21300000, guid: bcd9827d6838b60409bf62af2606dada, type: 3}
-  - {fileID: 21300000, guid: bcd9827d6838b60409bf62af2606dada, type: 3}
-  - {fileID: 21300000, guid: bcd9827d6838b60409bf62af2606dada, type: 3}
+  - {fileID: 21300000, guid: acf58257f5519d14b8a9e2360e0d3764, type: 3}
+  - {fileID: 21300000, guid: 4bcd42161e7bba84d9bee2c73373917d, type: 3}
 --- !u!4 &2019817993
 Transform:
   m_ObjectHideFlags: 0
